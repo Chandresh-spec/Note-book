@@ -1,18 +1,18 @@
 {% extends "index.html" %}
 {% block content %}
-{% for item in items %}
 
 <main class="notes">
+  {% for item in items %}
   <div class="note-card">
-    <h2>{{item.title}}</h2>
-    <p>{{item.content}}.</p>
+    <h2>{{ item.title }}</h2>
+    <p>{{ item.content }}</p>
     <div class="actions">
-      <a href="{% url 'view_page'  item.pk %}">View</a>
-      <a href="{% url 'edit_page' item.pk%}">Edit</a>
-      <a href="{% url 'delete_page' item.pk%}">Delete</a>
+      <a href="{% url 'view_page' item.pk %}">View</a>
+      <a href="{% url 'edit_page' item.pk %}">Edit</a>
+      <a href="{% url 'delete_page' item.pk %}">Delete</a>
     </div>
   </div>
+  {% endfor %}
 </main>
 
-{% endfor %}
-{% endblock  %}
+{% endblock %}
