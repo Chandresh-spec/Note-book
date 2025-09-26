@@ -32,8 +32,8 @@ def Add_view(request):
 
 
 def view_page(request,pk):
-    view=get_object_or_404(Note,pk=pk)
-    return render(request,'view.html',{'view':view})
+    note=get_object_or_404(Note,pk=pk)
+    return render(request,'view.html',{'note':note})
 
 
 

@@ -1,0 +1,291 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  padding: 15px 30px;
+  color: white;
+}
+
+.navbar .logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #f39c12;
+}
+
+/* Add Note button */
+.navbar .btn {
+  background: #f39c12;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.navbar .btn:hover {
+  background: #d35400;
+  color: #fff;
+}
+
+/* Notes container */
+
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  justify-content: center;
+}
+
+/* Card style */
+.note-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.note-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Content */
+.note-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions a {
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  transition: background 0.2s ease;
+}
+
+/* Button colors */
+.actions a:nth-child(1) { background: #3498db; }   /* View = Blue */
+.actions a:nth-child(2) { background: #f39c12; }   /* Edit = Orange */
+.actions a:nth-child(3) { background: #e74c3c; }   /* Delete = Red */
+
+.actions a:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
+.note-detail {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.note-detail h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.note-detail p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.note-detail .actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.note-detail .actions a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.note-detail .actions a:nth-child(1) { background: #f39c12; } /* Edit */
+.note-detail .actions a:nth-child(2) { background: #e74c3c; } /* Delete */
+.note-detail .actions a:nth-child(3) { background: #3498db; } /* Back */
+
+
+
+
+
+
+
+
+/* Form Container */
+.form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+/* Django Form Fields */
+.note-form p {
+  margin-bottom: 15px;
+}
+
+.note-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #34495e;
+}
+
+.note-form input[type="text"],
+.note-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.note-form input[type="text"]:focus,
+.note-form textarea:focus {
+  border-color: #f39c12;
+  outline: none;
+}
+
+/* Submit Button */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: #f39c12;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background: #d35400;
+}
+
+
+
+
+
+
+/* Delete Page */
+.delete-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.delete-container h2 {
+  color: #c0392b;
+  margin-bottom: 20px;
+}
+
+.note-preview {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.note-preview h3 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.delete-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-delete {
+  background: #e74c3c;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-delete:hover {
+  background: #c0392b;
+}
+
+.btn-cancel {
+  background: #7f8c8d;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-cancel:hover {
+  background: #555;
+}
+

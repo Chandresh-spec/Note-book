@@ -4,14 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Notebook App</title>
-  <link rel="stylesheet" href="{%  static 'style.css' %}">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-  <nav>
-    <h1>📝 Notebook App</h1>
-    <a href="{% url 'add_note' %}" class="btn">+ Add Note</a>
+  <nav class="navbar">
+    <div class="logo">
+      <h1>📝 Notebook App</h1>
+    </div>
+    <div class="nav-links">
+      <a href="{% url 'display' %}">Home</a>
+      <a href="{% url 'add_note' %}" class="btn">+ Add Note</a>
+    </div>
   </nav>
-  {% block content %}
-  {% endblock  %}
+
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
 </body>
 </html>
