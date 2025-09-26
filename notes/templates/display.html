@@ -7,9 +7,9 @@
     <h2>{{item.title}}</h2>
     <p>{{item.content}}.</p>
     <div class="actions">
-      <a href="#">View</a>
-      <a href="e#">Edit</a>
-      <a href="#">Delete</a>
+      <a href="{% url 'view_page'  item.pk %}">View</a>
+      <a href="{% url 'edit_page' item.pk%}">Edit</a>
+      <a href="{% url 'delete_page' item.pk%}">Delete</a>
     </div>
   </div>
 </main>
