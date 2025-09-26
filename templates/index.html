@@ -9,29 +9,9 @@
 <body>
   <nav>
     <h1>📝 Notebook App</h1>
-    <a href="#" class="btn">+ Add Note</a>
+    <a href="{% url 'add_note' %}" class="btn">+ Add Note</a>
   </nav>
-
-  <main class="notes">
-    <div class="note-card">
-      <h2>Shopping List</h2>
-      <p>Buy milk, bread, and eggs.</p>
-      <div class="actions">
-        <a href="#">View</a>
-        <a href="e#">Edit</a>
-        <a href="#">Delete</a>
-      </div>
-    </div>
-
-    <div class="note-card">
-      <h2>Ideas</h2>
-      <p>Start working on a portfolio website.</p>
-      <div class="actions">
-        <a href="#">View</a>
-        <a href="#">Edit</a>
-        <a href="#">Delete</a>
-      </div>
-    </div>
-  </main>
+  {% block content %}
+  {% endblock  %}
 </body>
 </html>

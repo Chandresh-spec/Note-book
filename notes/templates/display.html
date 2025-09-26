@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% block content %}
+{% for item in items %}
+
+<main class="notes">
+  <div class="note-card">
+    <h2>{{item.title}}</h2>
+    <p>{{item.content}}.</p>
+    <div class="actions">
+      <a href="#">View</a>
+      <a href="e#">Edit</a>
+      <a href="#">Delete</a>
+    </div>
+  </div>
+</main>
+
+{% endfor %}
+{% endblock  %}
