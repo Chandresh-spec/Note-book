@@ -33,7 +33,7 @@ A simple **Note App** built with Django that allows users to **create, view, edi
 ![Add Note](assets/addnote.png)
 
 ### Edit Note
-![Edit Note](assets/edit_note.png)
+![Edit Note](assets/editpage.png)
 
 ### View Note
 ![View Note](assets/viewpage.png)
